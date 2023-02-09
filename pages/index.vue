@@ -23,24 +23,26 @@
     align-items: center;
     background-color: $lovely-lilac;
     color: $cool-cornflower;
-
-    // @include laptopAndAbove() {
-    //   padding-top: 200px;
-    //   padding-left: 300px;
-    // }
   }
 
   &__text-container {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Lato';
-
     max-width: 50rem;
+
+    @include tabletAndAbove() {
+      font-size: 30px;
+    }
   }
 
   &__name {
-    font-size: 90px;
+    font-size: 80px;
     margin-bottom: 30px;
     font-family: 'Abril Fatface';
+
+    @include tabletAndAbove() {
+      font-size: 90px;
+    }
   }
 
   &__description {
@@ -50,12 +52,19 @@
 
   &__btn {
     background-color: $cool-cornflower;
-    padding: 14px 48px 25px;
+    padding: 20px 48px 25px;
     border: unset;
     border-radius: 10px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Lato';
+    width: 100%;
+
+    @include tabletAndAbove() {
+      font-size: 25px;
+      padding: 14px 48px 25px;
+      width: unset;
+    }
   }
 }
 </style>
