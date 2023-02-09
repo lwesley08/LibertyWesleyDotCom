@@ -1,0 +1,19 @@
+// breakpoints
+
+@mixin laptopAndAbove {
+  @media only screen and (min-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin desktopAndAbove {
+  @media only screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin tabletAndAbove {
+  @media only screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
