@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Abril+Fatface:400' }],
+        { rel: 'stylesheet', href: 'https://use.typekit.net/wdk0jlo.css' }
+      ],
     }
   },
   vite: {

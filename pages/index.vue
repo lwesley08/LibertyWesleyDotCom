@@ -1,69 +1,59 @@
 <template>
-  <div class="greeting__container">
-    <div class="greeting__text-container">
-      <p>Hello, I'm</p>
-      <h1 class="greeting__name">Liberty Wesley</h1>
-      <p class="greeting__description">A Cleveland-based web designer and developer, specializing in beautiful
-        mobile-first digital designs.</p>
-      <a href="mailto:libertywesley@proton.me"><button class="greeting__btn">Say Hello</button></a>
+  <div class="welcome-page">
+    <div class="hero">
+      <div class="hero__text-container">
+        <h1 class="hero__name">Liberty Wesley</h1>
+        <p class="hero__title">UX/UI Designer & Developer</p>
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss">
-.greeting {
-  &__container {
-    height: 100vh;
-    max-width: 100vw;
-    padding-left: 5rem;
-    padding-right: 5rem;
+.welcome-page {
+  background: $background-white;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $lovely-lilac;
-    color: $cool-cornflower;
-  }
+  .hero {
+    height: 80vh;
+    padding: 250px 16px 0px;
+    box-sizing: border-box;
 
-  &__text-container {
-    font-size: 25px;
-    font-family: 'Lato';
-    max-width: 50rem;
-
-    @include tabletAndAbove() {
-      font-size: 30px;
+    @media screen and (min-width: $breakpoint-tablet) {
+     padding: 431px 80px 0px;
     }
-  }
-
-  &__name {
-    font-size: 80px;
-    margin-bottom: 30px;
-    font-family: 'Abril Fatface';
-
-    @include tabletAndAbove() {
-      font-size: 90px;
+    
+    @media screen and (min-width: $breakpoint-laptop) {
+     padding: 361px 157px 0px;
     }
-  }
 
-  &__description {
-    max-width: 650px;
-    margin-bottom: 65px;
-  }
+    &__text-container {
+      text-align: center;
 
-  &__btn {
-    background-color: $cool-cornflower;
-    padding: 20px 48px 25px;
-    border: unset;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
-    font-family: 'Lato';
-    width: 100%;
+      @media screen and (min-width: $breakpoint-laptop) {
+        text-align: left;
+      }
+    }
 
-    @include tabletAndAbove() {
+    &__name {
+      font-family: "ivymode", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 50px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 100px;
+      }
+    }
+
+    &__title {
+      font-family: "freight-text-pro", serif;
+      font-weight: 400;
+      font-style: normal;
       font-size: 25px;
-      padding: 14px 48px 25px;
-      width: unset;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 45px;
+      }
     }
   }
 }
