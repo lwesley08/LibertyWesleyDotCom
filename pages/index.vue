@@ -98,8 +98,9 @@ body {
 .welcome-page {
   height: 100%;
   position: relative;
+  overflow-x: hidden;
   
-  .background {  
+  .background { 
     img {
       position: absolute;
       z-index: -1;
