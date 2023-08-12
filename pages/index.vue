@@ -96,11 +96,11 @@ body {
     box-sizing: border-box;
 
     @media screen and (min-width: $breakpoint-tablet) {
-     padding: 431px 80px 0px;
+     padding: 431px 6% 0px;
     }
     
     @media screen and (min-width: $breakpoint-laptop) {
-     padding: 261px 157px 0px;
+     padding: 261px 10% 0px;
     }
 
     &__text-container {
@@ -168,11 +168,11 @@ body {
     padding: 200px 20px 0px;
 
     @media screen and (min-width: $breakpoint-tablet) {
-     padding: 287px 80px 0px;
+     padding: 287px 6% 0px;
     }
     
     @media screen and (min-width: $breakpoint-laptop) {
-     padding: 480px 157px 0px;
+     padding: 480px 10% 0px 25%;
     }
 
     &__title {
@@ -205,11 +205,11 @@ body {
     padding: 200px 20px 0px;
 
     @media screen and (min-width: $breakpoint-tablet) {
-      padding: 268px 80px 0px;
+      padding: 268px 6% 0px;
     }
 
     @media screen and (min-width: $breakpoint-laptop) {
-      padding: 417px 157px 0px;
+      padding: 417px 10% 0px;
       text-align: center;
     }
 
@@ -317,11 +317,11 @@ body {
     padding: 100px 20px 800px;
 
     @media screen and (min-width: $breakpoint-tablet) {
-      padding: 125px 80px 800px;
+      padding: 125px 6% 800px;
     }
 
     @media screen and (min-width: $breakpoint-laptop) {
-      padding: 200px 157px 500px;
+      padding: 200px 10% 500px 40%;
     }
 
     &__title {
@@ -390,11 +390,11 @@ body {
     padding: 0px 20px 30px;
 
     @media screen and (min-width: $breakpoint-tablet) {
-     padding: 0px 80px 37px;
+     padding: 0px 6% 37px;
     }
     
     @media screen and (min-width: $breakpoint-laptop) {
-     padding: 0px 157px 37px;
+     padding: 0px 10% 37px;
     }
  
     &__copyright {
