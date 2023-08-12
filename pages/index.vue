@@ -53,6 +53,14 @@
         </div>
       </div>
     </div>
+    <div class="contact">
+      <h3 class="contact__title">Contact</h3>
+      <p class="contact__text">Have a project you think would be a good fit? Let’s talk!</p>
+    </div>
+    <div class="footer">
+      <p class="footer__copyright">© 2023 Liberty Wesley</p>
+      <p>All graphics courtesy of Space by Ker'is from Noun Project (CC BY 3.0)</p>
+    </div>
   </div>
 </template>
 
@@ -255,5 +263,68 @@ body {
       }
     }
   }
+
+  .contact {
+    padding: 100px 20px 800px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding: 125px 80px 800px;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      padding: 200px 157px 500px;
+    }
+
+    &__title {
+      font-family: "ivymode", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 30px;
+      opacity: 80%;
+      margin-top: 0px;
+      margin-bottom: 11px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+       font-size: 35px;
+      }
+    }
+
+    &__text {
+      font-family: "freight-text-pro", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 20px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+       font-size: 25px;
+      }
+    }
+  }
+
+  .footer {
+    font-family: "freight-text-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: 16px;
+    }
+
+    padding: 0px 20px 30px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+     padding: 0px 80px 37px;
+    }
+    
+    @media screen and (min-width: $breakpoint-laptop) {
+     padding: 0px 157px 37px;
+    }
+ 
+    &__copyright {
+      padding-bottom: 12px;
+    }
+  }
+
 }
 </style>
