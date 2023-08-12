@@ -70,6 +70,8 @@
       <img class="background__space-top" src="/space-top.svg"/>
       <img class="background__aquarius" src="/aquarius.svg"/>
       <img class="background__meteor" src="/meteor.svg"/>
+      <img class="background__star" src="/star.svg"/>
+      <img class="background__rocket" src="/rocket.svg"/>
     </div>
   </div>
 </template>
@@ -94,7 +96,10 @@ body {
   background: $background-white;
 }
 .welcome-page {
-  .background {
+  height: 100%;
+  position: relative;
+  
+  .background {  
     img {
       position: absolute;
       z-index: -1;
@@ -153,6 +158,38 @@ body {
       @media screen and (min-width: $breakpoint-laptop) {
         top: 1253px;
         max-width: 522px;
+      }
+    }
+
+    &__star {
+      max-width: 267px;
+      width: 30%;
+      top: 1050px;
+      left: -20px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        top: 1400px;
+      }
+
+      @media screen and (min-width: $breakpoint-laptop) {
+        top: 1675px;
+        max-width: 327px;
+      }
+    }
+
+    &__rocket {
+      width: 80%;
+      max-width: 626px;
+      bottom: 79px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+
+      @media screen and (min-width: $breakpoint-laptop) {
+        bottom: 89px;
+        left: 32px;
+        right: unset;
+        margin: unset;
       }
     }
   }
@@ -381,7 +418,7 @@ body {
   }
 
   .contact {
-    padding: 100px 20px 800px;
+    padding: 100px 20px 700px;
 
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 125px 6% 800px;
