@@ -65,6 +65,10 @@
       <p class="footer__copyright">© 2023 Liberty Wesley</p>
       <p>All graphics courtesy of Space by Ker'is from Noun Project (CC BY 3.0)</p>
     </div>
+
+    <div class="background">
+      <img class="background__space-top" src="/space-top.svg"/>
+    </div>
   </div>
 </template>
 
@@ -88,7 +92,32 @@ body {
   background: $background-white;
 }
 .welcome-page {
-  background: $background-white;
+  .background {
+    img {
+      position: absolute;
+      z-index: -1;
+    }
+
+    &__space-top {
+      width: 80%;
+      max-width: 691px;
+      top: -100px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        top: -250px;
+      }
+
+      @media screen and (min-width: $breakpoint-laptop) {
+        top: 50px;
+        right: 50px;
+        left: unset;
+        margin: unset;
+      }
+    }
+  }
 
   .hero {
     // height: 80vh;
