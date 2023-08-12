@@ -68,6 +68,8 @@
 
     <div class="background">
       <img class="background__space-top" src="/space-top.svg"/>
+      <img class="background__aquarius" src="/aquarius.svg"/>
+      <img class="background__meteor" src="/meteor.svg"/>
     </div>
   </div>
 </template>
@@ -115,6 +117,42 @@ body {
         right: 50px;
         left: unset;
         margin: unset;
+      }
+    }
+
+    &__aquarius {
+      max-width: 438px;
+      top: 500px;
+      left: -60px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        top: 720px;
+        left: -20px;
+      }
+
+      @media screen and (min-width: $breakpoint-laptop) {
+        top: 900px;
+        left: 98px;
+      }
+    }
+
+    &__meteor {
+      max-width: 322px;
+      width: 60%;
+      top: 832px;
+      right: -50px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        max-width: 446px;
+        width: 50%;
+        top: 1132px;
+        right: -50px;
+        width: unset;
+      }
+
+      @media screen and (min-width: $breakpoint-laptop) {
+        top: 1253px;
+        max-width: 522px;
       }
     }
   }
@@ -231,7 +269,7 @@ body {
     }
   }
   .featured-work {
-    padding: 200px 20px 0px;
+    padding: 250px 20px 0px;
 
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 268px 6% 0px;
