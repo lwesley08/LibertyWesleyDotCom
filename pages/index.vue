@@ -4,13 +4,14 @@
       <div class="hero__text-container">
         <h1 class="hero__name">Liberty Wesley</h1>
         <p class="hero__title">UX/UI Designer & Developer</p>
+        <a href="#portolio"><div aria-role="button" class="hero__button">See Portfolio</div></a>
       </div>
     </div>
     <div class="about">
       <h3 class="about__title">About</h3>
       <p class="about__text">Hello! I’m Liberty, a UX/UI designer with 5+ years of experience creating human-friendly applications, as unique as the brands they serve. I believe in designing accessible and maintainable products through research and collaboration. Let’s build something beautiful together!</p>
     </div>
-    <div class="featured-work">
+    <div class="featured-work" id="portolio">
       <h3 class="featured-work__title">Featured Work</h3>
       <div class="featured-work__card-list">
         <div class="featured-work__card">
@@ -56,6 +57,9 @@
     <div class="contact">
       <h3 class="contact__title">Contact</h3>
       <p class="contact__text">Have a project you think would be a good fit? Let’s talk!</p>
+      <div aria-role="button" class="contact__button" @click="onCopyEmailAddressClick">
+        {{ isCopyActive ? 'Copied Email Address!' : 'Copy Email Address' }}
+      </div>
     </div>
     <div class="footer">
       <p class="footer__copyright">© 2023 Liberty Wesley</p>
@@ -63,6 +67,21 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+const isCopyActive = ref(false);
+
+function onCopyEmailAddressClick() {
+  const text = "libertywesley08@gmail.com"
+  navigator.clipboard.writeText(text);
+  isCopyActive.value = true;
+
+  setTimeout(() => {
+    isCopyActive.value = false;
+  }, 5000);
+}
+</script>
 
 <style lang="scss">
 body {
@@ -111,6 +130,36 @@ body {
 
       @media screen and (min-width: $breakpoint-tablet) {
         font-size: 45px;
+      }
+    }
+
+    &__button {
+      background-color: $purple;
+      color: $background-white;
+      border-radius: 5px;
+      padding: 11px 27px 14px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      font-family: "freight-text-pro", serif;
+      font-weight: 400;
+      font-style: normal;
+      display: inline-block;
+      margin-top: 25px;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #B6C4FF;
+      }
+
+      &:active {
+        background-color: #778CE3;
+      }
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 25px;
+      }
+
+      @media screen and (min-width: $breakpoint-laptop) {
+        margin-top: 60px;
       }
     }
   }
@@ -297,6 +346,33 @@ body {
 
       @media screen and (min-width: $breakpoint-tablet) {
        font-size: 25px;
+      }
+    }
+
+    &__button {
+      background-color: $purple;
+      color: $background-white;
+      border-radius: 5px;
+      padding: 11px 27px 14px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      font-family: "freight-text-pro", serif;
+      font-weight: 400;
+      font-style: normal;
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #B6C4FF;
+      }
+
+      &:active {
+        background-color: #778CE3;
+      }
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 25px;
       }
     }
   }
