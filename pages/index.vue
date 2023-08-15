@@ -14,7 +14,7 @@
     <div class="featured-work" id="portolio">
       <h3 class="featured-work__title">Featured Work</h3>
       <div class="featured-work__card-list">
-        <div class="featured-work__card">
+        <div class="featured-work__card featured-work__card--tsd-site">
           <div class="featured-work__card-text">
             <div>
               <p class="featured-work__card-type">Case Study:</p>
@@ -352,6 +352,7 @@ body {
 
       @media screen and (min-width: $breakpoint-laptop) {
         margin-bottom: 50px;
+        row-gap: 50px;
       }
     }
 
@@ -368,7 +369,12 @@ body {
 
       @media screen and (min-width: $breakpoint-laptop) {
         flex-direction: row;
+        justify-content: space-between;
         padding: 48px 40px 36px 40px;
+
+        &--tsd-site {
+          padding-right: 90px;
+        }
       }
     }
 
@@ -379,6 +385,12 @@ body {
       display: flex;
       justify-content: center;
       align-items: flex-end;
+
+      @media screen and (min-width: $breakpoint-laptop) {
+        height: 300px;
+        transform-origin: bottom right;
+        transform: scale(1.45) translateY(25px);
+      }
       
       img {
         max-width: 100%;
@@ -403,7 +415,6 @@ body {
       row-gap: 30px;
       
       @media screen and (min-width: $breakpoint-laptop) {
-        row-gap: 130px;
         flex-basis: 45%;
       }
     }
@@ -443,7 +454,7 @@ body {
     }
 
     &__card-services {
-      font-weight: 500px;
+      font-weight: 500;
       opacity: 45%;
       text-transform: uppercase;
       font-size: 23px; 
