@@ -25,6 +25,9 @@
               <p class="featured-work__card-services">ux design · ui design · frontend&nbsp;development</p>
             </div>
           </div>
+          <div class="featured-work__card-photo">
+            <img src="/TSDSite.png"/>
+          </div>
         </div>
 
         <div class="featured-work__card">
@@ -38,6 +41,9 @@
               <p class="featured-work__card-services">ux design · ui design</p>
             </div>
           </div>
+          <div class="featured-work__card-photo">
+            <img src="/TSDCMS.png"/>
+          </div>
         </div>
 
         <div class="featured-work__card">
@@ -50,6 +56,9 @@
             <div>
               <p class="featured-work__card-services">ux design · ui design</p>
             </div>
+          </div>
+          <div class="featured-work__card-photo">
+            <img src="/ManegeSite.png"/>
           </div>
         </div>
       </div>
@@ -352,9 +361,30 @@ body {
       border: 1px solid rgba(0, 0, 0, 0.10);
       box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      row-gap: 20px;
 
-      padding: 48px 0px 36px 40px;
+      padding: 30px 20px 0px 20px;
+
+      @media screen and (min-width: $breakpoint-laptop) {
+        flex-direction: row;
+        padding: 48px 40px 36px 40px;
+      }
+    }
+
+    &__card-photo {
+      height: 400px;
+      overflow-y: hidden;
+      overflow-x: hidden; 
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
     }
 
     &__card-text {
@@ -365,9 +395,10 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      row-gap: 130px;
+      row-gap: 30px;
       
       @media screen and (min-width: $breakpoint-laptop) {
+        row-gap: 130px;
         flex-basis: 45%;
       }
     }
