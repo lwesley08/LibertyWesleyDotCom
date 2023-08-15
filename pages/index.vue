@@ -25,12 +25,12 @@
               <p class="featured-work__card-services">ux design · ui design · frontend&nbsp;development</p>
             </div>
           </div>
-          <div class="featured-work__card-photo">
+          <div class="featured-work__card-photo featured-work__card-photo--tsd-site">
             <img src="/TSDSite.png"/>
           </div>
         </div>
 
-        <div class="featured-work__card">
+        <div class="featured-work__card featured-work__card--tsd-cms">
           <div class="featured-work__card-text">
             <div>
               <p class="featured-work__card-type">Case Study:</p>
@@ -41,12 +41,12 @@
               <p class="featured-work__card-services">ux design · ui design</p>
             </div>
           </div>
-          <div class="featured-work__card-photo">
+          <div class="featured-work__card-photo featured-work__card-photo--tsd-cms">
             <img src="/TSDCMS.png"/>
           </div>
         </div>
 
-        <div class="featured-work__card">
+        <div class="featured-work__card featured-work__card--horse">
           <div class="featured-work__card-text">
             <div>
               <p class="featured-work__card-type">Coming Soon:</p>
@@ -57,7 +57,7 @@
               <p class="featured-work__card-services">ux design · ui design</p>
             </div>
           </div>
-          <div class="featured-work__card-photo featured-work__card-photo--padded">
+          <div class="featured-work__card-photo featured-work__card-photo--horse featured-work__card-photo--padded">
             <img src="/ManegeSite.png"/>
           </div>
         </div>
@@ -385,6 +385,14 @@ body {
       display: flex;
       justify-content: center;
       align-items: flex-end;
+
+      &--tsd-cms {
+        height: 300px;
+      }
+
+      &--horse {
+        height: 250px;
+      }
 
       @media screen and (min-width: $breakpoint-laptop) {
         height: 300px;
