@@ -49,7 +49,7 @@
         <div class="featured-work__card">
           <div class="featured-work__card-text">
             <div>
-              <p class="featured-work__card-type">Case Study:</p>
+              <p class="featured-work__card-type">Coming Soon:</p>
               <p class="featured-work__card-company">Manege De Heide</p>
               <p class="featured-work__card-description">A responsive site for a horse stable in Pulderbos, Belgium.</p>
             </div>
