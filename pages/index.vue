@@ -465,7 +465,7 @@ body {
       font-weight: 500;
       opacity: 45%;
       text-transform: uppercase;
-      font-size: 23px; 
+      font-size: 18px; 
 
       @media screen and (min-width: $breakpoint-tablet) {
         font-size: 18px;
