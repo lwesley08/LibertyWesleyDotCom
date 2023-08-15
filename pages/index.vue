@@ -57,7 +57,7 @@
               <p class="featured-work__card-services">ux design · ui design</p>
             </div>
           </div>
-          <div class="featured-work__card-photo">
+          <div class="featured-work__card-photo featured-work__card-photo--padded">
             <img src="/ManegeSite.png"/>
           </div>
         </div>
@@ -384,6 +384,11 @@ body {
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
+      }
+
+      &--padded {
+        padding-bottom: 20px;
+        transform: translateX(-40px);
       }
     }
 
