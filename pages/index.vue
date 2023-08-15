@@ -408,7 +408,11 @@ body {
 
       &--padded {
         padding-bottom: 20px;
-        transform: translateX(-40px);
+        transform: translateX(-25px);
+
+        @media screen and (min-width: $breakpoint-laptop) {
+          transform: translateX(-40px);
+        }
       }
     }
 
