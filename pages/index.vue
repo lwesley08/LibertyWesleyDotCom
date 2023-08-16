@@ -14,21 +14,23 @@
     <div class="featured-work" id="portolio">
       <h3 class="featured-work__title">Featured Work</h3>
       <div class="featured-work__card-list">
-        <div class="featured-work__card featured-work__card--tsd-site">
-          <div class="featured-work__card-text">
-            <div>
-              <p class="featured-work__card-type">Case Study:</p>
-              <p class="featured-work__card-company">The Software Dispensary</p>
-              <p class="featured-work__card-description">A responsive landing page for a digital marketing startup aimed at the legal cannabis  industry.</p>
+        <NuxtLink to="/tsd-site">
+          <div class="featured-work__card featured-work__card--tsd-site">
+            <div class="featured-work__card-text">
+              <div>
+                <p class="featured-work__card-type">Case Study:</p>
+                <p class="featured-work__card-company">The Software Dispensary</p>
+                <p class="featured-work__card-description">A responsive landing page for a digital marketing startup aimed at the legal cannabis  industry.</p>
+              </div>
+              <div>
+                <p class="featured-work__card-services">ux design · ui design · frontend&nbsp;development</p>
+              </div>
             </div>
-            <div>
-              <p class="featured-work__card-services">ux design · ui design · frontend&nbsp;development</p>
+            <div class="featured-work__card-photo featured-work__card-photo--tsd-site">
+              <img src="/TSDSite.png"/>
             </div>
           </div>
-          <div class="featured-work__card-photo featured-work__card-photo--tsd-site">
-            <img src="/TSDSite.png"/>
-          </div>
-        </div>
+        </NuxtLink>
 
         <div class="featured-work__card featured-work__card--tsd-cms">
           <div class="featured-work__card-text">
