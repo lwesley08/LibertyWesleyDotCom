@@ -5,6 +5,7 @@
 </template>
 <style lang="scss">
 body {
+  background: $background-white;
   margin: 0;
 }
 
