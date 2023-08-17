@@ -79,7 +79,7 @@
           <div class="details-page__body-image">
             <img src="/tsd-site/Brand1.png"/>
           </div>
-          <div class="details-page__body-image" :style="{ height: '550px', marginTop: '20px' }">
+          <div class="details-page__body-image">
             <img src="/tsd-site/Brand2.png"/>
           </div>
         </div>
@@ -299,7 +299,7 @@ li {
     background-color: $highlight-white;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
-    padding: 25px 36px; // TODO mobile
+    padding: 25px 36px;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 100%;
@@ -351,15 +351,17 @@ li {
   &__body {
     display: flex;
     flex-direction: column;
-    row-gap: 140px;
+    row-gap: 80px;
     padding: 17px 20px 30px 20px;
 
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 17px 30px 50px 30px;
+      row-gap: 100px;
     }
 
     @media screen and (min-width: $breakpoint-laptop) {
       padding: 17px 8% 80px 8%;
+      row-gap: 140px;
     }
   }
 
@@ -367,6 +369,7 @@ li {
     display: flex;
     flex-direction: column;
     column-gap: 60px;
+    row-gap: 30px;
 
     @media screen and (min-width: $breakpoint-laptop) {
       flex-direction: row;
@@ -381,8 +384,12 @@ li {
     font-family: "freight-text-pro", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 35px; // TODO
+    font-size: 30px;
     margin-bottom: 20px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: 35px;
+    }
   }
 
   &__body-text {
@@ -390,7 +397,11 @@ li {
     font-family: "freight-text-pro", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px; // TODO
+    font-size: 18px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: 20px;
+    }
   }
 
   &__contact {
@@ -398,13 +409,14 @@ li {
     font-family: "freight-text-pro", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25px; // TODO
+    font-size: 20px;
     border-top: 1px solid rgba(0, 0, 0, .1);
 
     padding: 30px 20px 30px 20px;
 
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 50px 30px 50px 30px;
+      font-size: 25px;
     }
 
     @media screen and (min-width: $breakpoint-laptop) {
@@ -443,17 +455,12 @@ li {
     }
 
   &__body-image {
-    height: 400px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
     img {
+      display: block;
+      max-height: 550px;
       max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
+      width: auto;
+      height: auto;
     }
   }
 }
