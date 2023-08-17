@@ -156,7 +156,9 @@
     flex-direction: row;
     column-gap: 30px;
     padding: 40px 20px;
-    
+    flex-wrap: wrap;
+    row-gap: 20px;
+
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 40px 30px;
     }
@@ -165,6 +167,7 @@
       flex-direction: row;
       padding: 70px 8%;
       justify-content: space-between;
+      flex-wrap: nowrap;
     }
   }
 
@@ -174,6 +177,13 @@
     border-radius: 5px;
     padding: 25px 36px; // TODO mobile
     flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    min-width: 193px;
+   
+    @media screen and (min-width: $breakpoint-tablet) {
+      flex-basis: calc((100%/3) - 60px);
+    }
   }
 
   &__card-title {
