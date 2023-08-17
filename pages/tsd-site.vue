@@ -44,6 +44,21 @@
         </ol>
       </div>
     </div>
+
+    <div class="details-page__body">
+      <div class="details-page__body-section">
+        <p class="details-page__body-header">The Challenge</p>
+        <p class="details-page__body-text">The Software Dispensary is a digital marketing company aimed at the the legal cannabis industry. Their existing website had been created when the company as first formed and needed some TLC to make it suitably modern and professional. Created when the company was first formed, it no longer fit the branding in aesthetics or message. The main concerns were the lack of attention drawn to the product itself in the existing stock visuals, and the low visibility of the contact form and demo site links, intended to drive sales.</p>
+      </div>
+      <div class="details-page__body-section">
+        <p class="details-page__body-header">TL;DR - The Goals</p>
+        <ol class="details-page__body-text">
+          <li>Create a website to fit the brand: modern, simple, “just techie enough to seem like an authority while still being approachable.”</li>
+          <li>Communicate the product and main audience without too many gimmicks.</li>
+          <li>Draw more attention to the contact form and demo site.</li>
+        </ol>
+      </div>
+    </div>
   </div>
 </template>
 <script setup lang="ts"></script>
@@ -226,6 +241,43 @@
     li {
       margin: 5px 0px;
     }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    column-gap: 60px;
+    row-gap: 30px;
+    padding: 17px 20px 16px 20px;
+    
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding: 17px 30px 16px 30px;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      padding: 17px 8% 16px 8%;
+      flex-direction: row;
+    }
+  }
+
+  &__body-section {
+    flex-basis: 50%;
+  }
+
+  &__body-header {
+    font-family: "freight-text-pro", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px; // TODO
+    margin-bottom: 20px;
+  }
+
+  &__body-text {
+    margin-top: 0px;
+    font-family: "freight-text-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px; // TODO
   }
 }
 </style>
