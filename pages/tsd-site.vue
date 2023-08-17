@@ -60,7 +60,7 @@
           </ul>
         </div>
       </div>
-      
+
       <div class="details-page__body-row">
         <div class="details-page__body-section">
           <p class="details-page__body-header">Fitting The Brand</p>
@@ -76,10 +76,15 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          IMAGE
+          <div class="details-page__body-image">
+            <img src="/tsd-site/Brand1.png"/>
+          </div>
+          <div class="details-page__body-image" :style="{ height: '550px', marginTop: '20px' }">
+            <img src="/tsd-site/Brand2.png"/>
+          </div>
         </div>
       </div>
-      
+
       <div class="details-page__body-row">
         <div class="details-page__body-section">
           <p class="details-page__body-header">Highlighting the Product</p>
@@ -94,7 +99,9 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          IMAGE
+          <div class="details-page__body-image">
+            <img src="/tsd-site/product1.png"/>
+          </div>
         </div>
       </div>
 
@@ -110,7 +117,9 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          IMAGE
+          <div class="details-page__body-image">
+            <img src="/tsd-site/contactus.png"/>
+          </div>
         </div>
       </div>
 
@@ -122,7 +131,9 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          IMAGE
+          <div class="details-page__body-image">
+            <img src="/tsd-site/tablet.png"/>
+          </div>
         </div>
       </div>
     </div>
@@ -175,7 +186,7 @@ li {
     justify-content: flex-start;
     box-sizing: border-box;
     padding: 17px 20px 16px 20px;
-    
+
     @media screen and (min-width: $breakpoint-laptop) {
       padding: 17px 30px 16px 30px;
       height: 70px;
@@ -204,7 +215,7 @@ li {
     align-items: center;
     row-gap: 30px;
     padding: 40px 20px;
-    
+
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 40px 30px;
     }
@@ -238,7 +249,7 @@ li {
     font-style: normal;
     font-size: 18px;
     max-width: 500px;
-    
+
     @media screen and (min-width: $breakpoint-tablet) {
       max-width: 655px;
       font-size: 25px;
@@ -252,12 +263,12 @@ li {
   &__project-photo {
     height: 300px;
     overflow-y: hidden;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 
     @media screen and (min-width: $breakpoint-tablet) {
       height: 430px;
     }
-    
+
     img {
       height: 100%;
       object-fit: contain;
@@ -293,7 +304,7 @@ li {
     flex-shrink: 1;
     flex-basis: 100%;
     min-width: 193px;
-   
+
     @media screen and (min-width: $breakpoint-tablet) {
       flex-basis: calc((100%/3) - 60px);
     }
@@ -309,7 +320,7 @@ li {
       font-size: 20px;
       text-transform: uppercase;
       opacity: 0.6;
-  
+
       @media screen and (min-width: $breakpoint-tablet) {
         font-size: 22px;
       }
@@ -322,7 +333,7 @@ li {
     margin-bottom: 0px;
     transform: scale(1.1);
   }
-  
+
   &__card-details {
     font-family: "freight-text-pro", serif;
     font-weight: 400;
@@ -342,7 +353,7 @@ li {
     flex-direction: column;
     row-gap: 140px;
     padding: 17px 20px 30px 20px;
-    
+
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 17px 30px 50px 30px;
     }
@@ -391,7 +402,7 @@ li {
     border-top: 1px solid rgba(0, 0, 0, .1);
 
     padding: 30px 20px 30px 20px;
-    
+
     @media screen and (min-width: $breakpoint-tablet) {
       padding: 50px 30px 50px 30px;
     }
@@ -430,6 +441,21 @@ li {
         margin-top: 40px;
       }
     }
+
+  &__body-image {
+    height: 400px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
 }
 
 .footer {
@@ -447,11 +473,11 @@ li {
     @media screen and (min-width: $breakpoint-tablet) {
      padding: 0px 6% 37px;
     }
-    
+
     @media screen and (min-width: $breakpoint-laptop) {
      padding: 0px 10% 37px;
     }
- 
+
     &__copyright {
       padding-bottom: 12px;
     }
