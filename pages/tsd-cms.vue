@@ -171,6 +171,10 @@ function onCopyEmailAddressClick() {
 </script>
 
 <style lang="scss">
+li {
+  margin: 5px 0px;
+}
+
 .details-page {
   height: 100%;
   position: relative;
