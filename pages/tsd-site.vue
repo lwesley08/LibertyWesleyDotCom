@@ -126,9 +126,36 @@
         </div>
       </div>
     </div>
+
+    <div class="details-page__contact">
+      <p>Have a project you think would be a good fit? Let’s talk!</p>
+      <div aria-role="button" class="details-page__button" @click="onCopyEmailAddressClick">
+        {{ isCopyActive ? 'Copied Email Address!' : 'Copy Email Address' }}
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="footer__copyright">© 2023 Liberty Wesley</p>
+      <p>All graphics courtesy of Space by Ker'is from Noun Project (CC BY 3.0)</p>
+    </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+const isCopyActive = ref(false);
+
+function onCopyEmailAddressClick() {
+  const text = "libertywesley08@gmail.com"
+  navigator.clipboard.writeText(text);
+  isCopyActive.value = true;
+
+  setTimeout(() => {
+    isCopyActive.value = false;
+  }, 5000);
+}
+</script>
+
 <style lang="scss">
 .details-page {
   height: 100%;
@@ -314,14 +341,14 @@
     display: flex;
     flex-direction: column;
     row-gap: 140px;
-    padding: 17px 20px 16px 20px;
+    padding: 17px 20px 30px 20px;
     
     @media screen and (min-width: $breakpoint-tablet) {
-      padding: 17px 30px 16px 30px;
+      padding: 17px 30px 50px 30px;
     }
 
     @media screen and (min-width: $breakpoint-laptop) {
-      padding: 17px 8% 16px 8%;
+      padding: 17px 8% 80px 8%;
     }
   }
 
@@ -354,5 +381,79 @@
     font-style: normal;
     font-size: 20px; // TODO
   }
+
+  &__contact {
+    margin-top: 0px;
+    font-family: "freight-text-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px; // TODO
+    border-top: 1px solid rgba(0, 0, 0, .1);
+
+    padding: 30px 20px 30px 20px;
+    
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding: 50px 30px 50px 30px;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      padding: 80px 8% 80px 8%;
+    }
+  }
+
+  &__button {
+      background-color: $purple;
+      color: $background-white;
+      border-radius: 5px;
+      padding: 11px 27px 14px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      font-family: "freight-text-pro", serif;
+      font-weight: 400;
+      font-style: normal;
+      display: inline-block;
+      margin-top: 25px;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #B6C4FF;
+      }
+
+      &:active {
+        background-color: #778CE3;
+      }
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 25px;
+      }
+
+      @media screen and (min-width: $breakpoint-laptop) {
+        margin-top: 40px;
+      }
+    }
 }
+
+.footer {
+    font-family: "freight-text-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: 16px;
+    }
+
+    padding: 0px 20px 30px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+     padding: 0px 6% 37px;
+    }
+    
+    @media screen and (min-width: $breakpoint-laptop) {
+     padding: 0px 10% 37px;
+    }
+ 
+    &__copyright {
+      padding-bottom: 12px;
+    }
+  }
 </style>
