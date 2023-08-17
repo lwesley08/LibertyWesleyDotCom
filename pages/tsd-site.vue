@@ -46,17 +46,84 @@
     </div>
 
     <div class="details-page__body">
-      <div class="details-page__body-section">
-        <p class="details-page__body-header">The Challenge</p>
-        <p class="details-page__body-text">The Software Dispensary is a digital marketing company aimed at the the legal cannabis industry. Their existing website had been created when the company as first formed and needed some TLC to make it suitably modern and professional. Created when the company was first formed, it no longer fit the branding in aesthetics or message. The main concerns were the lack of attention drawn to the product itself in the existing stock visuals, and the low visibility of the contact form and demo site links, intended to drive sales.</p>
+      <div class="details-page__body-row">
+        <div class="details-page__body-section">
+          <p class="details-page__body-header">The Challenge</p>
+          <div class="details-page__body-text">The Software Dispensary is a digital marketing company aimed at the the legal cannabis industry. Their existing website had been created when the company as first formed and needed some TLC to make it suitably modern and professional. Created when the company was first formed, it no longer fit the branding in aesthetics or message. The main concerns were the lack of attention drawn to the product itself in the existing stock visuals, and the low visibility of the contact form and demo site links, intended to drive sales.</div>
+        </div>
+        <div class="details-page__body-section">
+          <p class="details-page__body-header">TL;DR - The Goals</p>
+          <ul class="details-page__body-text">
+            <li>Create a website to fit the brand: modern, simple, “just techie enough to seem like an authority while still being approachable.”</li>
+            <li>Communicate the product and main audience without too many gimmicks.</li>
+            <li>Draw more attention to the contact form and demo site.</li>
+          </ul>
+        </div>
       </div>
-      <div class="details-page__body-section">
-        <p class="details-page__body-header">TL;DR - The Goals</p>
-        <ol class="details-page__body-text">
-          <li>Create a website to fit the brand: modern, simple, “just techie enough to seem like an authority while still being approachable.”</li>
-          <li>Communicate the product and main audience without too many gimmicks.</li>
-          <li>Draw more attention to the contact form and demo site.</li>
-        </ol>
+      
+      <div class="details-page__body-row">
+        <div class="details-page__body-section">
+          <p class="details-page__body-header">Fitting The Brand</p>
+          <div class="details-page__body-text">
+            <p>Modern. Techie. Fun & Approachable. The perfect combination for a contemporary tech company appealing to small business owners.</p>
+            <br class="details-page__body-spacer"/>
+            <p>Key decision:</p>
+            <ul>
+              <li><strong>Imagery - </strong> Repetition of circuitry panels, reminiscent of the company logo to keep the techie vibe present throughout.</li>
+              <li><strong>Fonts - </strong>Combining the geometric Rubik for all-caps accents with the clean DM Sans and Inter to ride the fence between techie and friendly.</li>
+              <li><strong>Colors - </strong>Green accents throughout (variations of the primary brand color) as a nod to the product, while keeping it subtle and free of silly gimmicks.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="details-page__body-section">
+          IMAGE
+        </div>
+      </div>
+      
+      <div class="details-page__body-row">
+        <div class="details-page__body-section">
+          <p class="details-page__body-header">Highlighting the Product</p>
+          <div class="details-page__body-text">
+            <p>Why use stock imagery when you can let the product itself shine?</p>
+            <br class="details-page__body-spacer"/>
+            <p>Key decision:</p>
+            <ul>
+              <li><strong>Website Snapshots - </strong> Images of the application’s inventory module and homepage are prominently displayed.</li>
+              <li><strong>Demo Site - </strong>An additional call to action button directing future clients to a full-feature demo.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="details-page__body-section">
+          IMAGE
+        </div>
+      </div>
+
+      <div class="details-page__body-row">
+        <div class="details-page__body-section">
+          <p class="details-page__body-header">An Contact Form You Can’t Miss</p>
+          <div class="details-page__body-text">
+            <p>Key decision:</p>
+            <ul>
+              <li><strong>High-visibility call to action - </strong>Whether on mobile or desktop, the cta is the highest visibility button, displayed prominently in the primary green.</li>
+              <li><strong>Form on the homepage - </strong>Rather than hide the contact form on a separate page, clients will scroll to it directly on the homepage, making the process as simple as possible.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="details-page__body-section">
+          IMAGE
+        </div>
+      </div>
+
+      <div class="details-page__body-row">
+        <div class="details-page__body-section">
+          <p class="details-page__body-header">Responsive From The Start</p>
+          <div class="details-page__body-text">
+            <p>KBy keeping the mobile and tablet design in mind from the start, I created a site that keeps the goals in mind at every size, sacrificing space but never the brand’s aesthetic.</p>
+          </div>
+        </div>
+        <div class="details-page__body-section">
+          IMAGE
+        </div>
       </div>
     </div>
   </div>
@@ -246,8 +313,7 @@
   &__body {
     display: flex;
     flex-direction: column;
-    column-gap: 60px;
-    row-gap: 30px;
+    row-gap: 140px;
     padding: 17px 20px 16px 20px;
     
     @media screen and (min-width: $breakpoint-tablet) {
@@ -256,6 +322,15 @@
 
     @media screen and (min-width: $breakpoint-laptop) {
       padding: 17px 8% 16px 8%;
+    }
+  }
+
+  &__body-row {
+    display: flex;
+    flex-direction: column;
+    column-gap: 60px;
+
+    @media screen and (min-width: $breakpoint-laptop) {
       flex-direction: row;
     }
   }
