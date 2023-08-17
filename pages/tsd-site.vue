@@ -12,6 +12,38 @@
         <img src="/tsd-site/headerimg.png"/>
       </div>
     </div>
+    <div class="details-page__card-container">
+      <div class="details-page__card">
+        <div class="details-page__card-title">
+          <p>Services</p>
+          <hr class="details-page__card-underline"/>
+        </div>
+        <ol class="details-page__card-details">
+          <li>UX Design</li>
+          <li>UI Design</li>
+          <li>Frontend Development</li>
+        </ol>
+      </div>
+      <div class="details-page__card">
+        <div class="details-page__card-title">
+          <p>Team</p>
+          <hr class="details-page__card-underline"/>
+        </div>
+        <ol class="details-page__card-details">
+          <li>1 Founder</li>
+          <li>2 Stakeholders</li>
+        </ol>
+      </div>
+      <div class="details-page__card">
+        <div class="details-page__card-title">
+          <p>Product</p>
+          <hr class="details-page__card-underline"/>
+        </div>
+        <ol class="details-page__card-details">
+          <li>Responsive Web</li>
+        </ol>
+      </div>
+    </div>
   </div>
 </template>
 <script setup lang="ts"></script>
@@ -116,6 +148,73 @@
     img {
       height: 100%;
       object-fit: contain;
+    }
+  }
+
+  &__card-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    padding: 40px 20px;
+    
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding: 40px 30px;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      flex-direction: row;
+      padding: 70px 8%;
+      justify-content: space-between;
+    }
+  }
+
+  &__card {
+    background-color: $highlight-white;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 25px 36px; // TODO mobile
+    flex-grow: 1;
+  }
+
+  &__card-title {
+    display: inline-block;
+
+    p {
+      font-family: "freight-text-pro", serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 20px;
+      text-transform: uppercase;
+      opacity: 0.6;
+  
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__card-underline {
+    border: 3px solid $purple;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    transform: scale(1.1);
+  }
+  
+  &__card-details {
+    font-family: "freight-text-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: 20px;
+    }
+
+    li {
+      margin: 5px 0px;
     }
   }
 }

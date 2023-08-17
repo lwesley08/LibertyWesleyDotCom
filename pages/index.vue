@@ -19,7 +19,10 @@
             <div class="featured-work__card-text">
               <div>
                 <p class="featured-work__card-type">Case Study:</p>
-                <p class="featured-work__card-company">The Software Dispensary</p>
+                <div class="featured-work__card-company">
+                  <p>The Software Dispensary</p>
+                  <hr class="featured-work__card-underline"/>
+                </div>
                 <p class="featured-work__card-description">A responsive landing page for a digital marketing startup aimed at the legal cannabis  industry.</p>
               </div>
               <div>
@@ -36,7 +39,10 @@
           <div class="featured-work__card-text">
             <div>
               <p class="featured-work__card-type">Case Study:</p>
-              <p class="featured-work__card-company">The Software Dispensary</p>
+              <div class="featured-work__card-company">
+                  <p>The Software Dispensary</p>
+                  <hr class="featured-work__card-underline"/>
+                </div>
               <p class="featured-work__card-description">A Content Management System for configuring client websites and managing user data.</p>
             </div>
             <div>
@@ -52,7 +58,10 @@
           <div class="featured-work__card-text">
             <div>
               <p class="featured-work__card-type">Coming Soon:</p>
-              <p class="featured-work__card-company">Manege De Heide</p>
+              <div class="featured-work__card-company">
+                  <p>Manege De Heide</p>
+                  <hr class="featured-work__card-underline"/>
+                </div>
               <p class="featured-work__card-description">A responsive site for a horse stable in Pulderbos, Belgium.</p>
             </div>
             <div>
@@ -365,9 +374,16 @@ body {
       box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
       display: flex;
       flex-direction: column;
-      row-gap: 20px;
-
+      row-gap: 10px;
       padding: 30px 20px 0px 20px;
+      
+      &:hover {
+        box-shadow: 0px 0px 35px 12px rgba(0, 0, 0, 0.08);
+        .featured-work__card-underline {
+          width: 100%;    
+          opacity: 100%;      
+        }
+      }
 
       @media screen and (min-width: $breakpoint-laptop) {
         flex-direction: row;
@@ -433,6 +449,16 @@ body {
       }
     }
 
+    &__card-underline {
+      border: 3px solid $purple;
+      margin-top: 3px;
+      margin-bottom: 0px;
+      transform: scale(1.02);
+      width: 0px;
+      opacity: 0%;
+      transition: width .5s;
+    }
+
     &__card-type {
       font-weight: 700;
       font-style: italic;
@@ -446,6 +472,7 @@ body {
     }
 
     &__card-company {
+      display: inline-block;
       font-size: 35px;
       font-weight: 600;
       margin-top: 10px;
@@ -459,11 +486,11 @@ body {
     &__card-description {
       font-size: 20px;
       font-weight: 400;
-      margin-top: 15px;
+      margin-top: 5px;
 
       @media screen and (min-width: $breakpoint-tablet) {
         font-size: 20px;
-        margin-top: 15px;
+        margin-top: 5px;
       }
     }
 
