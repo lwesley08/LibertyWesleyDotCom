@@ -6,10 +6,10 @@
     <div class="details-page__header">
       <div class="details-page__header-text">
         <h1 class="details-page__project-title">The Software Dispensary</h1>
-        <p class=details-page__project-description>A landing page for a digital marketing startup aimed at the legal cannabis  industry.</p>
+        <p class=details-page__project-description>A Content Management System for configuring client websites and managing user data.</p>
       </div>
       <div class="details-page__project-photo">
-        <img src="/tsd-site/headerimg.png"/>
+        <img src="/tsd-cms/tsdcmsheader.png"/>
       </div>
     </div>
     <div class="details-page__card-container">
@@ -21,7 +21,6 @@
         <ol class="details-page__card-details">
           <li>UX Design</li>
           <li>UI Design</li>
-          <li>Frontend Development</li>
         </ol>
       </div>
       <div class="details-page__card">
@@ -31,7 +30,8 @@
         </div>
         <ol class="details-page__card-details">
           <li>1 Founder</li>
-          <li>2 Stakeholders</li>
+          <li>1 Backend Developer</li>
+          <li>1 Frontend Developer</li>
         </ol>
       </div>
       <div class="details-page__card">
@@ -49,29 +49,29 @@
       <div class="details-page__body-row">
         <div class="details-page__body-section">
           <p class="details-page__body-header">The Challenge</p>
-          <div class="details-page__body-text">The Software Dispensary is a digital marketing company aimed at the the legal cannabis industry. Their existing website needed some TLC to make it suitably modern and professional. Created when the company was first formed, it no longer fit the branding in aesthetics or message. The main concerns were the lack of attention drawn to the product itself in the existing stock visuals, and the low visibility of the contact form and demo site links, intended to drive sales.</div>
+          <div class="details-page__body-text">The Software Dispensary is a digital marketing company aimed at the the legal cannabis industry. The application that drives their data behind the scenes is a Content Management System (CMS). It is a portal for updating all user and client information, as well as the configuration of client websites and inventory.</div>
         </div>
         <div class="details-page__body-section">
           <p class="details-page__body-header">TL;DR - The Goals</p>
           <ul class="details-page__body-text">
-            <li>Create a website to fit the brand: modern, simple, “just techie enough to seem like an authority while still being approachable.”</li>
-            <li>Communicate the product and main audience without too many gimmicks.</li>
-            <li>Draw more attention to the contact form and demo site.</li>
+            <li>Design an scalable application to manage client’s and their websites, equally suited for beta and full launch.</li>
+            <li>Keep in line with brand aesthetic established by the company’s website.</li>
+            <li>Design for different levels of access, including internal and external users.</li>
           </ul>
         </div>
       </div>
       
       <div class="details-page__body-row">
         <div class="details-page__body-section">
-          <p class="details-page__body-header">Fitting The Brand</p>
+          <p class="details-page__body-header">Escaping Tables</p>
           <div class="details-page__body-text">
-            <p>Modern. Techie. Fun & Approachable. The perfect combination for a contemporary tech company appealing to small business owners.</p>
+            <p>Websites may think in tables, but that doesn’t mean users do. By designing all lists in a card format, the pages are more responsive and easier to scan.</p>
             <br class="details-page__body-spacer"/>
             <p>Key decision:</p>
             <ul>
-              <li><strong>Imagery - </strong> Repetition of circuitry panels, reminiscent of the company logo to keep the techie vibe present throughout.</li>
-              <li><strong>Fonts - </strong>Combining the geometric Rubik for all-caps accents with the clean DM Sans and Inter to ride the fence between techie and friendly.</li>
-              <li><strong>Colors - </strong>Green accents throughout (variations of the primary brand color) as a nod to the product, while keeping it subtle and free of silly gimmicks.</li>
+              <li><strong>Highlighting important fields - </strong> Most users decide what card to click based on name alone, making it the most visible field with other data supplementary.</li>
+              <li><strong>Quick Edits - </strong>Adding or removing roles, tags, and other common tasks accessible without entering the edit screen.</li>
+              <li><strong>Infinite Scroll - </strong> Most users find their record via search, meaning most records could be hidden until scroll to save unnecessary load time.</li>
             </ul>
           </div>
         </div>
@@ -82,14 +82,14 @@
       
       <div class="details-page__body-row">
         <div class="details-page__body-section">
-          <p class="details-page__body-header">Highlighting the Product</p>
+          <p class="details-page__body-header">A Robust Search</p>
           <div class="details-page__body-text">
-            <p>Why use stock imagery when you can let the product itself shine?</p>
+            <p>When getting new clients ready to launch, the faster, the better, and no one wants to spend any longer than they have to scrolling endless lists.</p>
             <br class="details-page__body-spacer"/>
             <p>Key decision:</p>
             <ul>
-              <li><strong>Website Snapshots - </strong> Images of the application’s inventory module and homepage are prominently displayed.</li>
-              <li><strong>Demo Site - </strong>An additional call to action button directing future clients to a full-feature demo.</li>
+              <li><strong>Fuzzy Search - </strong>Gracefully allow for typos from internal staff and clients in a hurry to make their change.</li>
+              <li><strong>Recent Searches - </strong>When setting up a new client, the same search term may be used many times in a day. Making this easily accessible saves valuable time and frustration.</li>
             </ul>
           </div>
         </div>
@@ -100,12 +100,14 @@
 
       <div class="details-page__body-row">
         <div class="details-page__body-section">
-          <p class="details-page__body-header">An Contact Form You Can’t Miss</p>
+          <p class="details-page__body-header">Dynamic Navigation </p>
           <div class="details-page__body-text">
+            <p>With the potential for internal and external users, all with varying access levels, the goal was to make the navigation as flexible as possible, maximizing screen real estate in all scenarios.</p>
             <p>Key decision:</p>
             <ul>
-              <li><strong>High-visibility call to action - </strong>Whether on mobile or desktop, the cta is the highest visibility button, displayed prominently in the primary green.</li>
-              <li><strong>Form on the homepage - </strong>Rather than hide the contact form on a separate page, clients will scroll to it directly on the homepage, making the process as simple as possible.</li>
+              <li><strong>Internal-Only items always visible - </strong>Internal access to client and user lists are separated from main navigation and always accessible.</li>
+              <li><strong>Built-in client switcher - </strong> Internal users are always able to switch clients without entering the client screen, speeding up workflows.</li>
+              <li><strong>Fixed top vs. side navigation - </strong>Main navigation categories are fixed to the top in a thin nav, and more granular options slide out from the side when necessary, utilizing full screen-width when possible.</li>
             </ul>
           </div>
         </div>
@@ -118,7 +120,19 @@
         <div class="details-page__body-section">
           <p class="details-page__body-header">Responsive From The Start</p>
           <div class="details-page__body-text">
-            <p>By keeping the mobile and tablet design in mind from the start, I created a site that keeps the goals in mind at every size, sacrificing space but never the brand’s aesthetic.</p>
+            <p>By keeping the mobile and tablet design in mind from the start, I designed the site to make sure no important data is lost, no matter how small the screen.</p>
+          </div>
+        </div>
+        <div class="details-page__body-section">
+          IMAGE
+        </div>
+      </div>
+      
+      <div class="details-page__body-row">
+        <div class="details-page__body-section">
+          <p class="details-page__body-header">Developer Handoff</p>
+          <div class="details-page__body-text">
+            <p>Using Figma’s built-in prototyping, library and component features, I make the developer handoff process as seamless as possible, defining common states, colors, and text styles up front so there’s no confusion how to tackle the markup and styling.</p>
           </div>
         </div>
         <div class="details-page__body-section">
@@ -157,10 +171,6 @@ function onCopyEmailAddressClick() {
 </script>
 
 <style lang="scss">
-li {
-  margin: 5px 0px;
-}
-
 .details-page {
   height: 100%;
   position: relative;
@@ -334,6 +344,10 @@ li {
 
     @media screen and (min-width: $breakpoint-tablet) {
       font-size: 20px;
+    }
+
+    li {
+      margin: 5px 0px;
     }
   }
 
