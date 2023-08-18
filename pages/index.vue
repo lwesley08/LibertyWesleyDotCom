@@ -35,24 +35,26 @@
           </div>
         </NuxtLink>
 
-        <div class="featured-work__card featured-work__card--tsd-cms">
-          <div class="featured-work__card-text">
-            <div>
-              <p class="featured-work__card-type">Case Study:</p>
-              <div class="featured-work__card-company">
-                  <p>The Software Dispensary</p>
-                  <hr class="featured-work__card-underline"/>
-                </div>
-              <p class="featured-work__card-description">A Content Management System for configuring client websites and managing user data.</p>
+        <NuxtLink to="/tsd-cms">
+          <div class="featured-work__card featured-work__card--tsd-cms">
+            <div class="featured-work__card-text">
+              <div>
+                <p class="featured-work__card-type">Case Study:</p>
+                <div class="featured-work__card-company">
+                    <p>The Software Dispensary</p>
+                    <hr class="featured-work__card-underline"/>
+                  </div>
+                <p class="featured-work__card-description">A Content Management System for configuring client websites and managing user data.</p>
+              </div>
+              <div>
+                <p class="featured-work__card-services">ux design · ui design</p>
+              </div>
             </div>
-            <div>
-              <p class="featured-work__card-services">ux design · ui design</p>
+            <div class="featured-work__card-photo featured-work__card-photo--tsd-cms">
+              <img src="/TSDCMS.png"/>
             </div>
           </div>
-          <div class="featured-work__card-photo featured-work__card-photo--tsd-cms">
-            <img src="/TSDCMS.png"/>
-          </div>
-        </div>
+      </NuxtLink>
 
         <div class="featured-work__card featured-work__card--horse">
           <div class="featured-work__card-text">

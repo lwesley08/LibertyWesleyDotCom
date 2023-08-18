@@ -76,7 +76,7 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          <div class="details-page__project-photo">
+          <div class="details-page__body-image">
             <img src="/tsd-cms/tsduserlist.png"/>
           </div>
         </div>
@@ -114,7 +114,7 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          <div class="details-page__project-photo">
+          <div class="details-page__body-image">
             <img src="/tsd-cms/nav.png"/>
           </div>
         </div>
@@ -128,7 +128,7 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          <div class="details-page__project-photo">
+          <div class="details-page__body-image">
             <img src="/tsd-cms/Responsive.png"/>
           </div>
         </div>
@@ -142,13 +142,12 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          <div class="details-page__project-photo">
+          <div class="details-page__body-image">
             <img src="/tsd-cms/Library.png"/>
           </div>
         </div>
         </div>
       </div>
-    </div>
 
     <div class="details-page__contact">
       <p>Have a project you think would be a good fit? Let’s talk!</p>
@@ -477,6 +476,7 @@ li {
       max-width: 100%;
       width: auto;
       height: auto;
+      box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
     }
   }
 }

@@ -461,6 +461,7 @@ li {
       max-width: 100%;
       width: auto;
       height: auto;
+      box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
     }
   }
 }
