@@ -107,6 +107,7 @@
           <p class="details-page__body-header">Dynamic Navigation </p>
           <div class="details-page__body-text">
             <p>With the potential for internal and external users, all with varying access levels, the goal was to make the navigation as flexible as possible, maximizing screen real estate in all scenarios.</p>
+            <br class="details-page__body-spacer"/>
             <p>Key decision:</p>
             <ul>
               <li><strong>Internal-Only items always visible - </strong>Internal access to client and user lists are separated from main navigation and always accessible.</li>
