@@ -96,7 +96,9 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          IMAGE
+          <div class="details-page__body-image">
+            <img src="/tsd-cms/search.png"/>
+          </div>
         </div>
       </div>
 
