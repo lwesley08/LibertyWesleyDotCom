@@ -76,7 +76,9 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          IMAGE
+          <div class="details-page__project-photo">
+            <img src="/tsd-cms/tsduserlist.png"/>
+          </div>
         </div>
       </div>
       
@@ -112,7 +114,9 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          IMAGE
+          <div class="details-page__project-photo">
+            <img src="/tsd-cms/nav.png"/>
+          </div>
         </div>
       </div>
 
@@ -124,7 +128,9 @@
           </div>
         </div>
         <div class="details-page__body-section">
-          IMAGE
+          <div class="details-page__project-photo">
+            <img src="/tsd-cms/Responsive.png"/>
+          </div>
         </div>
       </div>
       
