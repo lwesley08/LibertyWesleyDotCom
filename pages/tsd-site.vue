@@ -80,7 +80,7 @@
             <img src="/tsd-site/Brand1.png"/>
           </div>
           <div class="details-page__body-image">
-            <img src="/tsd-site/Brand2.png"/>
+            <img src="/tsd-site/brand2.png"/>
           </div>
         </div>
       </div>
