@@ -212,7 +212,7 @@ li {
   }
 
   &__name {
-    font-family: "ivymode", sans-serif;
+    font-family: "Italiana", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
@@ -247,7 +247,7 @@ li {
   }
 
   &__project-title {
-    font-family: "ivymode", sans-serif;
+    font-family: "Italiana", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
@@ -258,7 +258,7 @@ li {
   }
 
   &__project-description {
-    font-family: "freight-text-pro", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
@@ -328,7 +328,7 @@ li {
     display: inline-block;
 
     p {
-      font-family: "freight-text-pro", serif;
+      font-family: "Source Serif 4", serif;
       font-weight: 400;
       font-style: italic;
       font-size: 20px;
@@ -349,7 +349,7 @@ li {
   }
   
   &__card-details {
-    font-family: "freight-text-pro", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
@@ -399,7 +399,7 @@ li {
   }
 
   &__body-header {
-    font-family: "freight-text-pro", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 600;
     font-style: normal;
     font-size: 30px;
@@ -412,7 +412,7 @@ li {
 
   &__body-text {
     margin-top: 0px;
-    font-family: "freight-text-pro", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
@@ -424,7 +424,7 @@ li {
 
   &__contact {
     margin-top: 0px;
-    font-family: "freight-text-pro", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
@@ -448,7 +448,7 @@ li {
       border-radius: 5px;
       padding: 11px 27px 14px;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      font-family: "freight-text-pro", serif;
+      font-family: "Source Serif 4", serif;
       font-weight: 400;
       font-style: normal;
       display: inline-block;
@@ -485,7 +485,7 @@ li {
 }
 
 .footer {
-    font-family: "freight-text-pro", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;

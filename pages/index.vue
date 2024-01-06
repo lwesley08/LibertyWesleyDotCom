@@ -239,8 +239,8 @@ body {
     }
 
     &__name {
-      font-family: "ivymode", sans-serif;
-      font-weight: 400;
+      font-family: "Italiana", sans-serif;
+      font-weight: bold;
       font-style: normal;
       font-size: 50px;
 
@@ -250,7 +250,7 @@ body {
     }
 
     &__title {
-      font-family: "freight-text-pro", serif;
+      font-family: "Source Serif 4", serif;
       font-weight: 400;
       font-style: normal;
       font-size: 25px;
@@ -266,7 +266,7 @@ body {
       border-radius: 5px;
       padding: 11px 27px 14px;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      font-family: "freight-text-pro", serif;
+      font-family: "Source Serif 4", serif;
       font-weight: 400;
       font-style: normal;
       display: inline-block;
@@ -303,21 +303,21 @@ body {
     }
 
     &__title {
-      font-family: "ivymode", sans-serif;
-      font-weight: 600;
+      font-family: "Italiana", sans-serif;
+      font-weight: bold;
       font-style: normal;
-      font-size: 30px;
+      font-size: 35px;
       opacity: 80%;
       margin-top: 0px;
       margin-bottom: 11px;
 
       @media screen and (min-width: $breakpoint-tablet) {
-       font-size: 35px;
+       font-size: 40px;
       }
     }
 
     &__text {
-      font-family: "freight-text-pro", serif;
+      font-family: "Source Serif 4", serif;
       font-weight: 400;
       font-style: normal;
       font-size: 20px;
@@ -341,16 +341,16 @@ body {
     }
 
     &__title {
-      font-family: "ivymode", sans-serif;
-      font-weight: 600;
+      font-family: "Italiana", sans-serif;
+      font-weight: bold;
       font-style: normal;
-      font-size: 30px;
+      font-size: 35px;
       opacity: 80%;
       margin-top: 0px;
       margin-bottom: 26px;
 
       @media screen and (min-width: $breakpoint-tablet) {
-        font-size: 35px;
+        font-size: 40px;
       }
       
       @media screen and (min-width: $breakpoint-laptop) {
@@ -438,7 +438,7 @@ body {
 
     &__card-text {
       text-align: left;
-      font-family: "freight-text-pro", serif;
+      font-family: "Source Serif 4", serif;
       font-style: normal;
       
       display: flex;
@@ -462,7 +462,7 @@ body {
     }
 
     &__card-type {
-      font-weight: 700;
+      font-weight: bolder;
       font-style: italic;
       font-size: 25px;
       opacity: 60%;
@@ -520,21 +520,21 @@ body {
     }
 
     &__title {
-      font-family: "ivymode", sans-serif;
-      font-weight: 600;
+      font-family: "Italiana", sans-serif;
+      font-weight: bold;
       font-style: normal;
-      font-size: 30px;
+      font-size: 35px;
       opacity: 80%;
       margin-top: 0px;
       margin-bottom: 11px;
 
       @media screen and (min-width: $breakpoint-tablet) {
-       font-size: 35px;
+       font-size: 40px;
       }
     }
 
     &__text {
-      font-family: "freight-text-pro", serif;
+      font-family: "Source Serif 4", serif;
       font-weight: 400;
       font-style: normal;
       font-size: 20px;
@@ -550,7 +550,7 @@ body {
       border-radius: 5px;
       padding: 11px 27px 14px;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      font-family: "freight-text-pro", serif;
+      font-family: "Source Serif 4", serif;
       font-weight: 400;
       font-style: normal;
       display: inline-block;
@@ -573,7 +573,7 @@ body {
   }
 
   .footer {
-    font-family: "freight-text-pro", serif;
+    font-family: "Source Serif 4", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
