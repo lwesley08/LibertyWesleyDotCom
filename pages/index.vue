@@ -3,13 +3,13 @@
     <div class="hero">
       <div class="hero__text-container">
         <h1 class="hero__name">Liberty Wesley</h1>
-        <p class="hero__title">UX/UI Designer & Developer</p>
+        <p class="hero__title">Web Designer & Developer</p>
         <a href="#portolio"><div aria-role="button" class="hero__button">See Portfolio</div></a>
       </div>
     </div>
     <div class="about">
       <h3 class="about__title">About</h3>
-      <p class="about__text">Hello! I’m Liberty, a UX/UI designer with 5+ years of experience creating human-friendly applications, as unique as the brands they serve. I believe in designing accessible and maintainable products through research and collaboration. Let’s build something beautiful together!</p>
+      <p class="about__text">Hello! I’m Liberty, a web developer with 5+ years of experience creating human-friendly applications, as unique as the brands they serve. I'm passionate about building accessible and maintainable products through research and collaboration. Let’s build something beautiful together!</p>
     </div>
     <div class="featured-work" id="portolio">
       <h3 class="featured-work__title">Featured Work</h3>
